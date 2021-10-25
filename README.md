@@ -49,4 +49,22 @@ public static int computeClosestToZero(int[] ts) {
         return res;
     }
     ```
+    
+    Compare weights
+    ```JavaScript
+    function solve(weight0, weight1, weight2) {
+    // Write your code here
+    // To debug: console.error('Debug messages...');
+    const array = [weight0, weight1, weight2]
+
+    if (array.lenght == 0) {
+        return 0
+    }
+
+    const highest = Math.max(...array);
+    const results = array.indexOf(highest);
+
+    return results;
+}
+```
 
