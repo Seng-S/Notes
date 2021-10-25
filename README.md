@@ -23,3 +23,30 @@ public class MyProgram
 }
 ```
 
+ComputeClosestToZero(int[] ts)
+```Java
+public static int computeClosestToZero(int[] ts) {
+        // Write your code here
+        // To debug: System.err.println("Debug messages...");
+
+        if (ts.length == 0) {
+            return 0;
+        }
+
+        int res = ts[0];
+
+        for (int i : ts) {
+            int x = Math.abs(i);
+            int y = Math.abs(res);
+
+            if (y > x) {
+                res = x;
+            } else if (y == x) {
+                res = y;
+            }
+
+        }
+        return res;
+    }
+    ```
+
