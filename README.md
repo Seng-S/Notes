@@ -51,7 +51,7 @@ public static int computeClosestToZero(int[] ts) {
     ```
     
     Compare weights
-    ```JavaScript
+    ```Javascript
     function solve(weight0, weight1, weight2) {
     // Write your code here
     // To debug: console.error('Debug messages...');
