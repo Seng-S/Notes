@@ -22,7 +22,6 @@ public class MyProgram
     }
 }
 ```
-## JavaScript
 
 ComputeClosestToZero(int[] ts)
 ```Java
@@ -51,21 +50,23 @@ public static int computeClosestToZero(int[] ts) {
     }
     ```
     
+## JavaScript
+
     Compare weights
     ```Javascript
     function solve(weight0, weight1, weight2) {
-    // Write your code here
-    // To debug: console.error('Debug messages...');
-    const array = [weight0, weight1, weight2]
+        // Write your code here
+        // To debug: console.error('Debug messages...');
+        const array = [weight0, weight1, weight2]
 
-    if (array.lenght == 0) {
-        return 0
+        if (array.lenght == 0) {
+            return 0
+        }
+
+        const highest = Math.max(...array);
+        const results = array.indexOf(highest);
+
+        return results;
     }
-
-    const highest = Math.max(...array);
-    const results = array.indexOf(highest);
-
-    return results;
-}
-```
+    ```
 
